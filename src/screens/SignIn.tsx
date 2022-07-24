@@ -8,7 +8,7 @@ import { Input } from '../components/Input';
 import { Button } from '../components/Button';
 
 export function SignIn() {
-    const [name, setName] = useState('João');
+    const [name, setName] = useState('');
     const [password, setPassword] = useState('');
 
     const { colors } = useTheme();
@@ -36,7 +36,7 @@ export function SignIn() {
                 mb={8}
                 placeholder="Senha"
                 InputLeftElement={<Icon as={<Key color={colors.gray[300]} />} ml={4} />}
-                secureTextEntry
+                secureTextEntry //deixar oculta a senha - bolinhas
                 onChangeText={setPassword}
             />
 

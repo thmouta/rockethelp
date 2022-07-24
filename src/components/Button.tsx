@@ -1,7 +1,7 @@
 import { Button as ButtonNativeBase, IButtonProps, Heading } from 'native-base';
 
 type Props = IButtonProps & {
-    title: string;
+    title: string; //permite que cada botão tenha um title diferente
 }
 
 export function Button({ title, ...rest }: Props) {
